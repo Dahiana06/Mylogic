@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background: url(img/laptop.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.9;
+}
+
+.contenedor{
+  width: 100%;  
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-contenedor{
+    display: flex;
+    width: 650px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+}
+
+.registro, .login{
+    flex: 1;
+}
+
+.registro{
+    padding: 40px;
+    position: relative;
+}
+
+.registro h2{
+    color: #797979;
+    margin-bottom: 30px;
+}
+
+.registro input{
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: 1px solid #a8a8a8;
+    color: #333;
+}
+
+.registro input:active,
+.registro input:focus{
+    outline: none;
+}
+
+/*estilo del boton registrarse*/
+.registro .submit{
+    width: auto;
+    padding: 10px;
+    background: #1ab6b6;
+    color: #fff;
+    font-size: 12px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.registro::after{
+    content: '>';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    right: -23px;
+    padding: 10px;
+    text-align: center;
+    font-size: 19px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    box-shadow: -1px 1px 3px 1px rgba(0, 0, 0, .2);
+    color: #7c7c7c;
+}
+/*Dar estilo al contenedor*/
+.login{
+    background-image: linear-gradient(to bottom right, 
+    #1ab6b6, #0066ff );
+    padding: 40px;
+    line-height: 30px;/*espaciado entre líneas*/
+}
+/*dar estilo al titulo iniciar sesion*/
+.login h2{
+    margin-top: 30px;
+    Height: 100px;
+    color: #fff;
+    
+}
+ 
+.login input{
+    width: 100%; 
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: 1px solid #a8a8a8;
+    color: #333;
+}
+
+/*Estilo del boton de iniciar sesion*/
+.login .submit{
+    margin-top: 20px; /*Diustancia entre un elemento y otro de arriba hacia abajo*/
+    padding: 10px;
+    background: #1ab6b6;
+    color: #fff;
+    font-size: 12px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="header.js"></script>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>My Logic</title>
+</head>
+
+<body>
+    <center>
+    <main>
+    <header>
+        <nav>
+            <div class="logo ">My Logic</div>
+            <div class="menu">
+                <a href="#">Acerca de</a>
+                <a href="niveles.html">Niveles</a>
+                <a href="#">Perfil</a>
+                <a href="#">Comentanos</a>
+                <button type="button" class="botoninciar"><a href ="registro.html">Iniciar</a></button>
+            </div>
+        </nav>
+    </header>
+    <section class="principal">
+        <h2>Bienvendios</h2>
+        <div class="pcontaner">
+            <p>Una fuente de ayuda
+                <br>para el desarrollo
+                <br>de tu logica
+            </p>
+        </div>
+    </section>
+
+
+    <section class="about">
+        <div class="contenedor">
+            <div class="about-contenedor wrapper">
+                <h2>Acerca de</h2>
+                <img src="img/logo.png">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br> molestiae provident adipisci, odio tempora alias
+                    <br> quod facilis qui libero eaque ea dolorem fuga? Sunt,
+                    <br> Tempore dolore consectetur porro.</p>
+            </div>
+        </div>
+
+
+    </section>
+    <section id="niveles">
+        <section class="dos">
+
+            <h1>
+                <b>
+                    Niveles
+                </b>
+            </h1>
+
+
+            <div class="ventana" id="vent">
+                <div id="cerrar"><a href="javascript:cerrar()"><img src="img/error.png" width="40" height="40"></a>
+                </div>
+
+                <h1><br>Nivel 1:
+                <br><br>¿El padre de Ana tiene 4 hijos: Pepe, Popi, Pipu y... ¿quién es el cuarto?
+                <br><br><a href="javascript: opcion()">A)</a>Ana
+                <br><a href="opcion">B)</a>Maria
+                <br><a href="opcion">C)</a>Pupi
+                <br><a href="opcion">D)</a>Pepu</h1>
+            
+            </div>
+            <button id="boton">
+                <a href="javascript:abrir()">
+                    1
+                </a>
+            </button>
+            <button id="boton">
+                <a href="">
+                    2
+                </a>
+            </button>
+            <button id="boton">
+                <a href="">
+                    3
+                </a>
+            </button>
+
+        </section>
+
+    </section>
+
+
+
+    <section class="comentarios">
+        <form action="">
+            <h2>Comentanos</h2>
+            <label for="tipo">Seleccione el tipo de comentario</label>
+            <select>
+                <option>Sugerencia</option>
+                <option>Reclamo</option>
+                <option>Dudas</option>
+            </select>
+            <textarea name="Mensaje" placeholder="Mensaje"></textarea>
+            <input type="submit" class="submit" value="ENVIAR COMENTARIO">
+        </form>
+    </section>
+</main>
+    <script>
+        function abrir() {
+            document.getElementById("vent").style.display = "block";
+        }
+        function cerrar() {
+            document.getElementById("vent").style.display = "none";
+        }
+    </script>
+    </center>
+</body>
+
+</html>
